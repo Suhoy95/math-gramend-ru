@@ -1,0 +1,14 @@
+{
+  "name": "math-gramend-ru",
+  "version": "0.0.1",
+  "description": "A web site for saving mathnotes",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Ilya Sukhoplyuev (@suhoy95)",
+  "license": "GPL-3.0",
+  "devDependencies": {
+    "wired-elements": "^0.5.8"
+  }
+}
