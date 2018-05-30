@@ -1,2 +1,7 @@
 node_modules/
+
+private/*.html
+template/**/*.html
+www/*.html
+
 *.log
