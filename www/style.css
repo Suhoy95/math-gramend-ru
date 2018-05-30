@@ -1,0 +1,39 @@
+
+body {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    min-height: 100vh;
+    padding: 0;
+    margin: 0;
+    font-family: 'Gloria Hallelujah', sans-serif;
+    font-display: fallback;
+    letter-spacing: 0.05em;
+    line-height: 2;
+}
+
+header, main, footer {
+    margin: 0.5em;
+    width: calc(100% - 2em);
+}
+
+a, a:hover, a:visited {
+    color: inherit;
+    text-decoration: none;
+    outline: none;
+}
+
+a.textlink {
+    box-shadow: 0 -6px #eacff5f0 inset;
+}
+
+.container {
+    display: block;
+    width: 100%;
+    background: #f8ecc24d;
+}
+
+header .container a {
+    font-size: 22px;
+    margin: 0.5em 1em;
+}
