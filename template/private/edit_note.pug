@@ -1,4 +1,18 @@
 extend ../layout.pug
 
 block main
-  wired-card(elevation="3" class="container") Edit note
+  form
+    wired-textarea(elevation="3" rows=5 class="container" placeholder="Enter note")
+    div.tags
+      wired-card
+        | tag1
+      wired-card
+        | tag2
+      wired-card
+        | tag3
+      wired-card tag4
+        wired-icon-button delete
+    div
+      wired-input(placeholder="start typing...")
+      wired-button Add tag
+    wired-button Save

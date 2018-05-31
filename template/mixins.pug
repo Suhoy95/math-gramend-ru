@@ -1,0 +1,12 @@
+mixin note(title)
+  wired-card(elevation="3" class="note")
+    h1= title
+      div.instruments
+        wired-button edit
+        wired-icon-button delete
+    if block
+      block
+    else
+      p No content provided
+    div.instruments
+      wired-button edit

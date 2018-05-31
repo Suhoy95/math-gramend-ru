@@ -8,11 +8,33 @@ html
     link(rel="stylesheet" type="text/css" media="screen" href="/style.css")
     script(type="module" src="/wired-elements/wired-elements.js")
 
+  include ./mixins.pug
   body
     header
       wired-card(elevation="3" class="container")
+        div(class="flex-header")
           a(class="logo" href="/index.html") math.gramend.ru
+          a(href="/private/edit_note.html")
+            wired-button(style="background: #f0e6f4") Create
     main
       block main
     footer
       wired-card(elevation="3" class="container") @suhoy95
+
+    div.right-panel
+      wired-card.menu
+        h2 Menu
+        ul
+          li
+            a(href="#") Discrete math
+          li
+            a(href="#") Logic
+          li
+            a(href="#") Set Theory
+          li
+            a(href="#") Graph Theory
+      wired-card.tags-cloud
+        a(href="#") A
+        a(href="#") B
+        a(href="#") C
+        a(href="#") D

@@ -14,7 +14,7 @@ body {
 
 header, main, footer {
     margin: 0.5em;
-    width: calc(100% - 2em);
+    width: calc(100% - 27vw);
 }
 
 a, a:hover, a:visited {
@@ -27,13 +27,67 @@ a.textlink {
     box-shadow: 0 -6px #eacff5f0 inset;
 }
 
-.container {
+.container, .note {
     display: block;
     width: 100%;
     background: #f8ecc24d;
 }
 
+.note {
+    margin-bottom: 1em;
+}
+
+.note>h1 {
+    margin: 0 0.5em 0 0;
+}
+
+h1 .instruments {
+    float: right;
+}
+.instruments {
+    margin-top: 1em;
+    font-size: 12px;
+}
+
 header .container a {
     font-size: 22px;
     margin: 0.5em 1em;
+}
+
+.flex-header {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.right-panel {
+    position: fixed;
+    top: 0.5em;
+    right: 0.5em;
+    width: 23vw;
+}
+
+.right-panel wired-card {
+    width: 100%;
+    margin-bottom: 1em;
+    box-sizing: border-box;
+}
+
+.menu {
+    color: #f4621c;
+}
+
+.menu h2 {
+    margin: 0 1em;
+}
+
+.tags-cloud {
+    padding: 1em;
+    color: blue;
+    text-align: justify;
+}
+
+.tags-cloud a {
+    display: inline-block;
+    margin: 0 0.5em 0;
 }
